@@ -456,7 +456,7 @@ module Puma
       end
 
       begin
-        Signal.trap "SIGINFO" do
+        Signal.trap "SIGPWR" do
           log_thread_status
         end
       rescue Exception
